@@ -25549,6 +25549,60 @@
     'state': '68.0',
   })
 # ---
+# name: test_platform_setup_and_discovery[sensor.mt15_mt29_pm1-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': list([
+      None,
+    ]),
+    'area_id': None,
+    'capabilities': dict({
+      <SensorEntityCapabilityAttribute.STATE_CLASS: 'state_class'>: <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': None,
+    'device_class': None,
+    'device_id': <DeviceEntry identifiers=[('tuya', 'rzt2knqamsxjp8f9ycjjh')]>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.mt15_mt29_pm1',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'object_id_base': 'PM1',
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': None,
+    'original_name': 'PM1',
+    'platform': 'tuya',
+    'previous_unique_id': None,
+    'suggested_object_id': None,
+    'supported_features': 0,
+    'translation_key': 'pm1',
+    'unique_id': 'tuya.rzt2knqamsxjp8f9ycjjhpm1',
+    'unit_of_measurement': 'ug/m┬│',
+  })
+# ---
+# name: test_platform_setup_and_discovery[sensor.mt15_mt29_pm1-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      <EntityStateAttribute.FRIENDLY_NAME: 'friendly_name'>: 'MT15/MT29 PM1',
+      <SensorEntityCapabilityAttribute.STATE_CLASS: 'state_class'>: <SensorStateClass.MEASUREMENT: 'measurement'>,
+      <EntityStateAttribute.UNIT_OF_MEASUREMENT: 'unit_of_measurement'>: 'ug/m┬│',
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.mt15_mt29_pm1',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '12.0',
+  })
+# ---
 # name: test_platform_setup_and_discovery[sensor.mt15_mt29_pm10-entry]
   EntityRegistryEntrySnapshot({
     'aliases': list([
