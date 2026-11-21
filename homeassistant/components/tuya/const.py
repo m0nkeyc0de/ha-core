@@ -842,6 +842,7 @@ class DPCode(StrEnum):
     PHASE_S20 = "phase_s20"
     PH_CURRENT = "ph_current"
     PIR = "pir"  # Motion sensor
+    PM03 = "pm03"
     PM1 = "pm1"
     PM10 = "pm10"
     PM25 = "pm25"
@@ -1000,6 +1001,7 @@ class DPCode(StrEnum):
     TOTAL_POWER = "total_power"
     TOTAL_TIME = "total_time"
     TVOC = "tvoc"
+    TVOC_VALUE = "tvoc_value"
     UP_DOWN = "up_down"
     UPPER_TEMP = "upper_temp"
     UPPER_TEMP_F = "upper_temp_f"
@@ -1143,6 +1145,7 @@ UNITS = (
             SensorDeviceClass.NITROGEN_MONOXIDE,
             SensorDeviceClass.NITROUS_OXIDE,
             SensorDeviceClass.OZONE,
+            SensorDeviceClass.PM03,
             SensorDeviceClass.PM1,
             SensorDeviceClass.PM25,
             SensorDeviceClass.PM10,
@@ -1158,6 +1161,7 @@ UNITS = (
             SensorDeviceClass.NITROGEN_MONOXIDE,
             SensorDeviceClass.NITROUS_OXIDE,
             SensorDeviceClass.OZONE,
+            SensorDeviceClass.PM03,
             SensorDeviceClass.PM1,
             SensorDeviceClass.PM25,
             SensorDeviceClass.PM10,

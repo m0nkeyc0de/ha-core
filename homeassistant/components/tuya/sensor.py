@@ -745,6 +745,13 @@ SENSORS: dict[DeviceCategory, tuple[TuyaSensorEntityDescription, ...]] = {
             suggested_unit_of_measurement=UnitOfRatio.PARTS_PER_MILLION,
         ),
         TuyaSensorEntityDescription(
+            key=DPCode.CO_VALUE,
+            translation_key="carbon_monoxide",
+            device_class=SensorDeviceClass.CO,
+            state_class=SensorStateClass.MEASUREMENT,
+            suggested_unit_of_measurement=UnitOfRatio.PARTS_PER_MILLION,
+        ),
+        TuyaSensorEntityDescription(
             key=DPCode.CH2O_VALUE,
             translation_key="formaldehyde",
             state_class=SensorStateClass.MEASUREMENT,
@@ -754,6 +761,19 @@ SENSORS: dict[DeviceCategory, tuple[TuyaSensorEntityDescription, ...]] = {
             translation_key="voc",
             device_class=SensorDeviceClass.VOLATILE_ORGANIC_COMPOUNDS,
             state_class=SensorStateClass.MEASUREMENT,
+        ),
+        TuyaSensorEntityDescription(
+            key=DPCode.TVOC_VALUE,
+            translation_key="voc",
+            device_class=SensorDeviceClass.VOLATILE_ORGANIC_COMPOUNDS,
+            state_class=SensorStateClass.MEASUREMENT,
+        ),
+        TuyaSensorEntityDescription(
+            key=DPCode.PM03,
+            translation_key="pm03",
+            device_class=SensorDeviceClass.PM03,
+            state_class=SensorStateClass.MEASUREMENT,
+            suggested_unit_of_measurement=UnitOfDensity.MICROGRAMS_PER_CUBIC_METER,
         ),
         TuyaSensorEntityDescription(
             key=DPCode.PM1,

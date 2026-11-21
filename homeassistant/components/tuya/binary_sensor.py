@@ -247,6 +247,13 @@ BINARY_SENSORS: dict[DeviceCategory, tuple[TuyaBinarySensorEntityDescription, ..
         ),
         TAMPER_BINARY_SENSOR,
     ),
+    DeviceCategory.HJJCY: (
+        TuyaBinarySensorEntityDescription(
+            key=DPCode.CHARGE_STATE,
+            device_class=BinarySensorDeviceClass.BATTERY_CHARGING,
+            entity_category=EntityCategory.DIAGNOSTIC,
+        ),
+    ),
     DeviceCategory.HPS: (
         TuyaBinarySensorEntityDescription(
             key=DPCode.PRESENCE_STATE,

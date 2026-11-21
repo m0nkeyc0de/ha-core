@@ -348,6 +348,12 @@ class SensorDeviceClass(StrEnum):
     Unit of measurement: Unitless
     """
 
+    PM03 = "pm03"
+    """Particulate matter <= 0.3 μm.
+
+    Unit of measurement: `μg/m³`
+    """
+
     PM1 = "pm1"
     """Particulate matter <= 1 μm.
 
@@ -710,6 +716,7 @@ DEVICE_CLASS_UNITS: dict[SensorDeviceClass, set[type[StrEnum] | str | None]] = {
         UnitOfDensity.MICROGRAMS_PER_CUBIC_METER,
     },
     SensorDeviceClass.PH: {None},
+    SensorDeviceClass.PM03: {UnitOfDensity.MICROGRAMS_PER_CUBIC_METER},
     SensorDeviceClass.PM1: {UnitOfDensity.MICROGRAMS_PER_CUBIC_METER},
     SensorDeviceClass.PM10: {UnitOfDensity.MICROGRAMS_PER_CUBIC_METER},
     SensorDeviceClass.PM25: {UnitOfDensity.MICROGRAMS_PER_CUBIC_METER},
